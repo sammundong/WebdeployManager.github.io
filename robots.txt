@@ -1,3 +1,0 @@
-Sitemap: https://holdemfocus.run.goorm.site/sitemap.xml     // 제작된 sitemap 경로
-User-agent: * 
-Allow: /   
