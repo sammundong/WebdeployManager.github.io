@@ -1,0 +1,40 @@
+@font-face {
+	font-family: 'S-CoreDream-3Light';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*모바일 버전*/
+
+@media(max-width:767px) {
+	.ImgStyle{
+	}
+	.modal-inner{
+		box-sizing: border-box;
+		position: relative;
+		width: 360px;
+		max-width: 480px;
+		top: 50%;
+		transform: translateY(-50%);
+		margin: 0 auto;
+		padding: 40px 20px;
+	}
+}
+
+/*데스크탑 버전*/
+@media(min-width:768px) {
+	.ImgStyle{
+		width: 530px;
+		height: 650px;
+	}
+	.modal-inner{
+		box-sizing: border-box;
+		position: relative;
+		width: 530px;
+		max-width: 530px;
+		top: 50%;
+		transform: translateY(-50%);
+		margin: 0 auto;
+	}
+}

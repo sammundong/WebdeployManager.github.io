@@ -1,0 +1,701 @@
+
+@font-face {
+	font-family: 'S-CoreDream-3Light';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+* {
+	position:relative;
+	box-sizing: border-box;
+	color: white;
+	font-family: 'S-CoreDream-3Light';
+}
+
+body {
+	background-color: #1D1D1D;
+	width: 100%;
+}
+.container {
+	width: 100%;
+	max-width: 1480px;
+	padding: 0 20px;
+	margin: auto;
+	position: relative;
+	background-color: #1A1E1F;
+	z-index: 50;
+}
+a {
+	font-size: 16px;
+	text-decoration: none;
+}
+header {	
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 0;
+	z-index: 20;
+	background-color: #1A1E1F;
+}
+
+header h1 {
+	position: relative;
+	height: 40px;
+	margin:0;
+	float: left;
+	z-index: 30;
+}
+header h1 img{
+	display: block;
+	position: relative;
+	top:22px;
+}
+
+
+.btn {
+	display: inline-block;
+	color: #fff;
+	font-weight: bold;
+	padding: 12px 20px;
+	border-radius: 8px;
+	background-color: #004fff;
+}
+
+.ghost-btn {
+	background-color: transparent;
+	border: 1px solid #004fff;
+}
+
+.text-wrap {
+	width: 520px;
+	height: 100vh;
+	padding: 240px 20px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+
+.text-wrap h2 {
+	color: #fff;
+	font-size: 64px;
+	line-height: 1.25;
+	font-weight: lighter;
+	margin-bottom: 40px;
+}
+
+.text-wrap h3 {
+	color: #fff;
+	font-size: 24px;
+	line-height: 1.25;
+	margin-bottom: 20px;
+}
+
+.text-wrap p {
+	color: #fff;
+	font-size: 16px;
+	line-height: 1.8;
+	margin-bottom: 20px;
+}
+
+.hero-bg {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	background-color: #0E1926;
+}
+
+.hero-bg .container {
+	height: 100%;
+}
+
+.video-wrap {
+	position: absolute;
+	left: 200px;
+	width: 1600px;
+	height: 100vh;
+	z-index: 1;
+}
+
+.video-wrap video,
+.video-wrap img {
+	position: absolute;
+	display: block;
+	width: 100%;
+}
+
+
+
+.mb-5 {
+	margin-bottom:2vh;
+}
+
+.mt-7 {
+	margin-top:2.5vh;
+}
+
+.mt-9 {
+	margin-top:5vh;
+}
+
+.title {
+	width:65vw;
+	margin:auto;
+}
+
+.category {
+	font-size : 2vw;
+	font-weight : bold;
+}
+
+.line {
+	background-color :white;
+	width: 100%;
+	height: 0.3vh;
+	margin: auto;
+}
+
+.explain {
+	font-size: 1.7vw;
+}
+
+.place {
+	font-weight : bold;
+	font-size : 2vw;
+}
+
+.places {
+	width:65vw;
+	margin:auto;
+}
+
+.address {
+	font-size : 1.5vw;
+	color:#dfdfdf;
+}
+
+.contents {
+	width:80vw;
+	height:auto;
+	margin:auto;
+}
+.kakao {
+	width: 7vw;
+	height: 5vh;
+	background-color:#FFEB3B;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-weight: 550; 
+	color:#1d1d1d;
+	border-radius: 0.5rem;
+	font-size: 0.8rem;
+	border:none;
+}
+
+.kakao:active {
+	background-color:#1d1d1d;
+	color:#fae661;
+}
+
+.modal-btn {
+	margin-left:2vh;
+	width: 21vw;
+	height: 3vh;
+	background-color:white;
+	color:#1d1d1d;
+	border-radius: 0.5rem;
+	font-weight: 500; 
+	border:none;
+	font-size: 0.6rem;
+	
+}
+
+.modal-btn:active {
+	background-color:#1d1d1d;
+	color:white;
+}
+
+
+.btns {
+	margin-top:2vh;
+	display:flex;
+}
+
+.icon {
+	width:1.5vw;
+}
+
+.ReactModal__Overlay {
+	z-index:50;
+}
+
+.ReactModal__Content {
+	background:#1d1d1d;
+	width:70vw;
+	height:75vh;
+	margin:auto;
+	background-color:#1d1d1d!important;
+}
+
+.openmodal {
+	
+}
+
+#hadan {
+	width:60vw;
+	height: 60vh;
+	background-color:white;
+	margin-top: 2vh;
+}
+
+#nampo {
+	width:60vw;
+	height: 60vh;
+	background-color:white;
+	margin-top: 2vh;
+}
+
+#seomyeon {
+	width:60vw;
+	height: 60vh;
+	background-color:white;
+	margin-top: 2vh;
+}
+
+#deogcheon {
+	width:60vw;
+	height: 60vh;
+	background-color:white;
+	margin-top: 2vh;
+}
+
+#kyungsung {
+	width:60vw;
+	height: 60vh;
+	background-color:white;
+	margin-top: 2vh;
+}
+
+#jangyu {
+	width:60vw;
+	height: 60vh;
+	background-color:white;
+	margin-top: 2vh;
+}
+
+#Haeundae {
+	width:60vw;
+	height: 60vh;
+	background-color:white;
+	margin-top: 2vh;
+}
+
+#Gwangalli {
+	width:60vw;
+	height: 60vh;
+	background-color:white;
+	margin-top: 2vh;
+}
+
+#Dongrae {
+	width:60vw;
+	height: 60vh;
+	background-color:white;
+	margin-top: 2vh;
+}
+
+/*이거 div 태그로 감싸고 position: relative, width: 100%, height: 원하는만큼,
+  이런식으로 3개는 설정해주면서 해야 덜 깨지더랑
+	그리고 div 태그 많이쓰면 자동으로 상속되가지고 다음 div 태그 쓸 때는 clear: both; 쓰면 안 오켕*/
+.header4{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 80px;
+	background-color: #1D1D1D;
+}
+
+.logo {
+	top: 8px;
+    cursor:pointer;
+    float: left;
+	width: 270px;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	z-index: 50;
+}
+
+
+.main-navigation {
+	float: right;
+	font-size: 20px;
+}
+
+.main-navigation a {
+	color: #fff;
+	margin-left: 30px;
+	margin-top: 10px;
+}
+
+.main-navigation a.active {
+	font-weight: bold;
+	border-bottom: 2px solid #004fff;
+}
+a {
+	font-size: 22px;
+	text-decoration: none;
+}
+
+@media screen and (max-width:767px) {
+	.logo {
+		top: 3px;
+		left : -10px;
+		cursor:pointer;
+		float: left;
+		width: 170px;
+		height: auto;
+		
+		z-index: 20;
+	}
+	header{
+		padding: 0;
+		height: 56px;
+	}
+	header h1{
+		height: 56px;
+	}
+	header h1 img{
+		top:20px;
+		height: 16px;
+	}
+	.main-navigation{
+		position: fixed;
+		top:0;
+		right:0;
+		padding:50px 20px;
+		width: 100%;
+		height: 100vh;
+		background-color: rgba(14,25,38,0.9);
+		opacity: 0;
+		visibility: hidden;
+		transform: translateX(100%);
+		transition: 0.3s;
+	}
+	.main-navigation.active{
+		opacity: 1;
+		visibility: visible;
+		transform: translateX(0);
+		transition: 0.3s;
+	}
+	.main-navigation a{
+		display: block;
+		margin:auto;
+		margin-bottom:8px;
+		padding:12px;
+
+	}
+	.main-navigation a.btn{
+		text-align: center;
+	}
+	.video-wrap{
+		top:5vw;
+		left:-50%;
+		width:200%;
+	}
+	.text-wrap{
+		width:100%;
+		height: auto;
+		padding:20px;
+		top:auto;
+		bottom:20px;
+	}
+	.text-wrap h2{
+		font-size: 36px;
+	}
+	.text-wrap h3{
+		font-size: 20px;
+	}
+	.text-wrap p {
+		font-size: 14;
+	}
+
+	.more-btn{
+		display: block;
+		position: absolute;
+		right:12px;
+		top:8px;
+		width:40px;
+		height: 40px;
+		border-radius: 8px;
+		border:none;
+		background-color: transparent;
+	}
+	.more-btn .icon{
+		display: block;
+		width:24px;
+		height: 24px;
+		margin: 0 auto;
+		background: url(../images/menu-icon.svg) no-repeat center;
+		background-size: contain;
+	}
+	.more-btn.active .icon{
+		background: url(../images/menu-close-icon.svg) no-repeat center;
+		background-size: contain;
+	}
+	img {
+	width: 60vw;
+	height: 15vh;
+	object-fit: cover;
+	margin-bottom: 1vw;
+	margin-top: 1vw;
+	
+}
+	.header4{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #1D1D1D;
+}
+
+
+	.category {
+	font-weight : bold;
+	font-size : 5vw;
+}
+	.place {
+	font-weight : bold;
+	font-size : 5vw;
+}
+
+.address {
+	font-size : 4vw;
+	color:#dfdfdf;
+}
+	.mb-5 {
+	margin-bottom:1vh;
+}
+
+.mt-7 {
+	margin-top:1.5vh;
+}
+.mt-9 {
+	margin-top:3vh;
+}
+#hadan {
+	width:60vw;
+	height: 25vh;
+	background-color:white;
+	margin-top: 2vw
+}
+#nampo {
+	width:60vw;
+	height: 25vh;
+	background-color:white;
+	margin-top: 2vw
+}
+	#seomyeon {
+	width:60vw;
+	height: 25vh;
+	background-color:white;
+	margin-top: 2vw
+}
+	#deogcheon {
+	width:60vw;
+	height: 25vh;
+	background-color:white;
+	margin-top: 2vw
+}
+	#kyungsung {
+	width:60vw;
+	height: 25vh;
+	background-color:white;
+	margin-top: 2vw
+}
+	
+	#jangyu {
+	width:60vw;
+	height: 25vh;
+	background-color:white;
+	margin-top: 2vw
+}
+
+#Haeundae {
+	width:60vw;
+	height: 25vh;
+	background-color:white;
+	margin-top: 2vw
+}
+
+#Gwangalli {
+	width:60vw;
+	height: 25vh;
+	background-color:white;
+	margin-top: 2vw
+}
+
+#Dongrae {
+	width:60vw;
+	height: 25vh;
+	background-color:white;
+	margin-top: 2vw
+}
+	.kakao {
+	width: 19vw;
+	height: 3vh;
+	background-color:#fae661;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	color:#1d1d1d;
+	border-radius: 0.5rem;
+	border:none;
+	font-size:0.5rem;
+}
+
+.kakao:active {
+	background-color:#1d1d1d;
+	color:#fae661;
+}
+	.icon {
+	width:5vw;
+	height:auto;
+}
+	.modal {
+	margin-left:3vh;
+	width: 19vw;
+	height: 3vh;
+	background-color:white;
+	color:#1d1d1d;
+	border-radius: 0.5rem;
+	border:none;
+	font-size:0.5rem;
+	
+}
+
+.modal:active {
+	background-color:#1d1d1d;
+	color:white;
+}
+.ReactModal__Content {
+	background:#1d1d1d;
+	width:70vw;
+	height:30vh;
+	margin:auto;
+	background-color:#1d1d1d!important;
+}
+.txt{
+	list-style-type: none;
+	font-size: 4px;
+	color: gray;
+	position: relative;
+	left: 22%;
+}
+
+footer {
+	/*이 footer를 감싼 영역 자체에 margin-top을 줘버리면 빈 공간이 생김*/
+	clear: both;
+	width: 100%;
+	height: 70px;
+	color: gray;
+	list-style-type: none;
+	background-color:#292929;
+	font-size: 10px;
+}
+.footer_box {
+	clear: both;
+	width: 100%;
+	height: 70px;
+	margin: 0 auto;
+}
+.footer_logo {
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+	width: 40px;
+	height:40px;
+}
+.footer_box .address {
+	float: right;
+	margin-right:20%;
+	margin-top: 2%;
+	font-size: 3px;
+	color: gray;
+	/* margin: 45px 0 0 30px; */
+}
+.address{
+	color: white;
+}	
+}
+
+@media(min-width:768px) {
+	.more-btn {
+		display: none;
+	
+	}
+	.modal-btn {
+		margin-left:2vh;
+		width: 7vw;
+		height: 5vh;
+		background-color:white;
+		color:#1d1d1d;
+		border-radius: 0.5rem;
+		font-weight: 530; 
+		border:none;
+		font-size: 1rem;
+	}
+	
+	.modal-btn:active {
+		background-color:#1d1d1d;
+		color:white;
+	}
+	
+	.txt{
+		list-style-type: none;
+		font-size: 17px;
+		color: gray;
+		position: relative;
+		left: 70%;
+		line-height: 1.5rem;
+	}
+
+	footer {
+		clear: both;
+		position: relative;
+		width: 100%;
+		height: 150px;
+		color: darkgray;
+		list-style-type: none;
+		background-color:#292929;
+	}
+	.footer_box {
+		position: relative;
+		width: 100%;
+		height: 150px;
+	}
+	.footer_logo {
+		clear: both;
+		float: left;
+		margin-top: 12.5px;
+		width: 100px;
+		left: 3%;
+		height:100px;
+	}
+	.footer_box .address {
+		float: right;
+		margin-right: 20%;
+		font-size: 20px;
+		color: white;
+	}
+	.address{
+		margin-top: 2%;
+		color: #white;
+		
+	}
+}

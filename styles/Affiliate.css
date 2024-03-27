@@ -1,0 +1,925 @@
+@font-face {
+	font-family: 'S-CoreDream-3Light';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+.cat5{
+	background-color: #1A1E1F;
+	color: white;
+	margin:0;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'S-CoreDream-3Light';
+}
+
+body {
+	color: white;
+	background-color: #1D1D1D;
+}
+
+.container {
+	width: 100%;
+	max-width: 1480px;
+	padding: 0 20px;
+	margin: auto;
+	position: relative;
+	background-color: #1A1E1F;
+	z-index: 50;
+}
+a {
+	font-size: 16px;
+	text-decoration: none;
+}
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 0;
+	z-index: 20;
+	background-color: #1A1E1F;
+}
+
+header h1 {
+	position: relative;
+	height: 40px;
+	margin:0;
+	float: left;
+	z-index: 30;
+}
+header h1 img{
+	display: block;
+	position: relative;
+	top:22px;
+}
+
+
+.btn {
+	display: inline-block;
+	color: #fff;
+	font-weight: bold;
+	padding: 12px 20px;
+	border-radius: 8px;
+	background-color: #004fff;
+}
+
+.ghost-btn {
+	background-color: transparent;
+	border: 1px solid #004fff;
+}
+
+.text-wrap {
+	width: 520px;
+	height: 100vh;
+	padding: 240px 20px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+
+.text-wrap h2 {
+	color: #fff;
+	font-size: 64px;
+	line-height: 1.25;
+	font-weight: lighter;
+	margin-bottom: 40px;
+}
+
+.text-wrap h3 {
+	color: #fff;
+	font-size: 24px;
+	line-height: 1.25;
+	margin-bottom: 20px;
+}
+
+.text-wrap p {
+	color: #fff;
+	font-size: 16px;
+	line-height: 1.8;
+	margin-bottom: 20px;
+}
+
+.hero-bg {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	background-color: #0E1926;
+}
+
+.hero-bg .container {
+	height: 100%;
+}
+
+.video-wrap {
+	position: absolute;
+	left: 200px;
+	width: 1600px;
+	height: 100vh;
+	z-index: 1;
+}
+
+.video-wrap video,
+.video-wrap img {
+	position: absolute;
+	display: block;
+	width: 100%;
+}
+
+/*모바일 버전*/
+
+@media(max-width:767px) {
+	.txt{
+		list-style-type: none;
+		font-size: 4px;
+		color: gray;
+		position: relative;
+		left: 22%;
+	}
+
+	footer {
+		/*이 footer를 감싼 영역 자체에 margin-top을 줘버리면 빈 공간이 생김*/
+		clear: both;
+		width: 100%;
+		height: 70px;
+		color: gray;
+		list-style-type: none;
+		background-color:#292929;
+		font-size: 10px;
+	}
+	.footer_box {
+		clear: both;
+		width: 100%;
+		height: 70px;
+		margin: 0 auto;
+	}
+	.footer_logo {
+		float: left;
+		margin-top: 5px;
+		margin-left: 5px;
+		width: 40px;
+		height:40px;
+	}
+	.footer_box .address {
+		float: right;
+		margin-right:20%;
+		margin-top: 2%;
+		font-size: 3px;
+		color: gray;
+		/* margin: 45px 0 0 30px; */
+	}
+	.address{
+		color: darkgray;
+	}
+	.logo {
+		top: 3px;
+		left : -10px;
+		cursor:pointer;
+		float: left;
+		width: 170px;
+		height: auto;
+		
+		z-index: 20;
+	}
+	header{
+		padding: 0;
+		height: 56px;
+	}
+	header h1{
+		height: 56px;
+	}
+	header h1 img{
+		top:20px;
+		height: 16px;
+	}
+	.main-navigation{
+		position: fixed;
+		top:0;
+		right:0;
+		padding:50px 20px;
+		width: 100%;
+		height: 100vh;
+		background-color: rgba(14,25,38,0.9);
+		opacity: 0;
+		visibility: hidden;
+		transform: translateX(100%);
+		transition: 0.3s;
+	}
+	.main-navigation.active{
+		opacity: 1;
+		visibility: visible;
+		transform: translateX(0);
+		transition: 0.3s;
+	}
+	.main-navigation a{
+		display: block;
+		margin:auto;
+		margin-bottom:8px;
+		padding:12px;
+
+	}
+	.main-navigation a.btn{
+		text-align: center;
+	}
+	.video-wrap{
+		top:5vw;
+		left:-50%;
+		width:200%;
+	}
+	.text-wrap{
+		width:100%;
+		height: auto;
+		padding:20px;
+		top:auto;
+		bottom:20px;
+	}
+	.text-wrap h2{
+		font-size: 36px;
+	}
+	.text-wrap h3{
+		font-size: 20px;
+	}
+	.text-wrap p {
+		font-size: 14;
+	}
+
+	.more-btn{
+		display: block;
+		position: absolute;
+		right:12px;
+		top:8px;
+		width:40px;
+		height: 40px;
+		border-radius: 8px;
+		border:none;
+		background-color: transparent;
+	}
+	.more-btn .icon{
+		display: block;
+		width:24px;
+		height: 24px;
+		margin: 0 auto;
+		background: url(../images/menu-icon.svg) no-repeat center;
+		background-size: contain;
+	}
+	.more-btn.active .icon{
+		background: url(../images/menu-close-icon.svg) no-repeat center;
+		background-size: contain;
+	}
+	.contact-items{
+		width: 100%;
+		height: 300px;
+	}
+	.header5{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 60px;
+		background-color: #1A1E1F;
+	}
+	.parag5{
+		top: 30%;
+		/* left: 40%; */
+		text-align: center;
+		position: relative;
+		width: 100%;
+		height: 20px;
+	}
+	.parag-icon5{
+		text-align: center;
+		width: 150px;
+		height: 10px;
+	}
+	.kakao-logo{
+		width: 50px;
+		height: 50px;
+		line-height: 80px;
+		position: relative;
+		top: 10%;
+		left: -4%;
+	}
+	.band-logo{
+		width: 50px;
+		height: 50px;
+		line-height: 80px;
+		position: relative;
+		top: 10%;
+		left: -2.8%;
+	}
+	.cost-contact{
+		clear: both;
+		position: relative;
+		width: 100%;
+		height: 700px;
+	}
+	.contact-box{
+		text-align: center;
+		width: 300px;
+		height:170px;
+		float: center;
+		display: block;
+	  	margin: auto;
+	}
+	.contact-box > h2{
+		font-size: 24px;
+	}
+	.contact-box > h4{
+		font-size: 15px;
+	}
+	.represent1{
+		margin: auto;
+		text-align: center;
+		width: 320px;
+		height: 70px;
+		font-size: 18px;
+		/*inline-block으로 설정하고 margin: auto하면 가운데 정렬 안됨. width 설정해주고 margin: auto 줘야 중앙정렬됨*/
+		color: #fff;
+		font-weight: bold;
+		padding: 22px 30px;
+		border-radius: 8px;
+		background-color: #004fff;
+	}
+	.represent2{
+		margin: auto;
+		text-align: center;
+		width: 320px;
+		height: 70px;
+		font-size: 18px;
+		/*inline-block으로 설정하고 margin: auto하면 가운데 정렬 안됨. width 설정해주고 margin: auto 줘야 중앙정렬됨*/
+		color: #371C1D;
+		font-weight: bold;
+		line-height: 70px;
+		border-radius: 8px;
+		z-index: 1;
+		background-color: #F9E000;
+	}
+	.acc1{
+		z-index: 5;
+		font-size: 18px;
+		/*inline-block으로 설정하고 margin: auto하면 가운데 정렬 안됨. width 설정해주고 margin: auto 줘야 중앙정렬됨*/
+		color: #371C1D;
+		font-weight: bold;
+		bottom: 25%;
+	}
+	.acc2{
+		z-index: 5;
+		/*inline-block으로 설정하고 margin: auto하면 가운데 정렬 안됨. width 설정해주고 margin: auto 줘야 중앙정렬됨*/
+		font-size: 18px;
+		/*inline-block으로 설정하고 margin: auto하면 가운데 정렬 안됨. width 설정해주고 margin: auto 줘야 중앙정렬됨*/
+		color: #fff;
+		font-weight: bold;
+		bottom: 25%;
+	}
+	.represent3{
+		top: 0;
+		margin: auto;
+		/*div 태그 안의 텍스트를 세로로 가운데 배치하고 싶으면 line-height를 높이랑 같이 주면 되*/
+		text-align: center;
+		width: 320px;
+		height: 70px;
+		font-size: 18px;
+		/*inline-block으로 설정하고 margin: auto하면 가운데 정렬 안됨. width 설정해주고 margin: auto 줘야 중앙정렬됨*/
+		color: #fff;
+		font-weight: bold;
+		line-height: 70px;
+		border-radius: 8px;
+		background-color: #1BCC21;
+	}
+
+	.costTable > h2{
+		font-size: 24px;
+		text-align: center;
+		top: 10%;
+	}
+	.costTable > h3{
+		font-size: 15px;
+		width: 80%;
+		margin: auto;
+		text-align: center;
+		top: 13%;
+	}
+	.last-text{
+		color: black;
+		text-align: center;
+		font-weight: 800;
+	}
+	.column-text{
+		color: white;
+	}
+	.text-left{
+		color: black;
+		text-align: center;
+	}
+	.costTable{
+		width: 100%;
+		clear: both;
+		height: 800px;
+		position: relative;
+	}
+	.header5{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 80px;
+		background-color: #1A1E1F;
+	}
+
+	body {
+	  font-family: "Roboto", helvetica, arial, sans-serif;
+	  font-size: 16px;
+	  font-weight: 400;
+	  text-rendering: optimizeLegibility;
+	}
+
+	div.table-title {
+	  top: 20%;
+	  position: relative;
+	  margin: auto;
+	  width: 85%;
+	  color: black;
+	  border: #2F313D solid 2.5px; 
+	}
+
+	/*** Table Styles **/
+	.table-fill {
+	  
+	  background: white;
+	  border-radius:3px;
+	  border-collapse: collapse;
+	  height: 320px;
+	  margin: auto;
+	  max-width: 100%;
+	  padding:5px;
+	  width: 100%;
+	  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	  animation: float 5s infinite;
+	}
+
+	th {
+	  color:#D5DDE5;
+	  background:#1b1e24;
+	  border-bottom:4px solid #9ea7af;
+	  border-right: 1px solid #343a45;
+	  font-size:14px;
+	  font-weight: 100;
+	  padding:20px;
+	  text-align:left;
+	  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	  vertical-align:middle;
+	}
+
+	th:first-child {
+	  border-top-left-radius:3px;
+	}
+
+	th:last-child {
+	  border-top-right-radius:3px;
+	  border-right:none;
+	}
+
+	tr {
+	  border-top: 1px solid #C1C3D1;
+	  border-bottom-: 1px solid #C1C3D1;
+	  color:#666B85;
+	  font-size:16px;
+	  font-weight:normal;
+	  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+	}
+
+	tr:hover td {
+	  background:#4E5066;
+	  color:#FFFFFF;
+	  border-top: 1px solid #22262e;
+	}
+
+	tr:first-child {
+	  border-top:none;
+	}
+
+	tr:last-child {
+	  border-bottom:none;
+	}
+
+	tr:nth-child(odd) td {
+	  background:#EBEBEB;
+	}
+
+	tr:nth-child(odd):hover td {
+	  background:#4E5066;
+	}
+
+	tr:last-child td:first-child {
+	  border-bottom-left-radius:3px;
+	}
+
+	tr:last-child td:last-child {
+	  border-bottom-right-radius:3px;
+	}
+
+	td {
+	  background:#FFFFFF;
+	  padding:7px;
+	  text-align:left;
+	  vertical-align:middle;
+	  font-weight:300;
+	  font-size:15px;
+	  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+	  border-right: 1px solid #C1C3D1;
+	}
+
+	td:last-child {
+	  border-right: 0px;
+	}
+
+	th.text-left {
+	  text-align: left;
+	}
+
+	th.text-center {
+	  text-align: center;
+	}
+
+	th.text-right {
+	  text-align: right;
+	}
+
+	td.text-left {
+	  text-align: left;
+	}
+
+	td.text-center {
+	  text-align: center;
+	}
+
+	td.text-right {
+	  text-align: right;
+	}
+}
+
+/*데스크탑 버전*/
+@media(min-width:768px) {
+	.more-btn {
+
+		display: none;
+	
+	}
+	
+	.txt{
+		list-style-type: none;
+		font-size: 17px;
+		color: gray;
+		position: relative;
+		left: 70%;
+		line-height: 1.5rem;
+	}
+
+	footer {
+		clear: both;
+		position: relative;
+		width: 100%;
+		height: 150px;
+		color: darkgray;
+		list-style-type: none;
+		background-color:#292929;
+	}
+	.footer_box {
+		position: relative;
+		width: 100%;
+		height: 150px;
+	}
+	.footer_logo {
+		clear: both;
+		float: left;
+		margin-top: 12.5px;
+		width: 100px;
+		left: 3%;
+		height:100px;
+	}
+	.footer_box .address {
+		float: right;
+		margin-right: 20%;
+		font-size: 20px;
+		color: darkgray;
+	}
+	.address{
+		margin-top: 2%;
+		color: #404040;
+		
+	}
+	.logo {
+		top: 8px;
+		cursor:pointer;
+		float: left;
+		width: 270px;
+		height: auto;
+		margin: 0;
+		padding: 0;
+		z-index: 50;
+		}
+		
+	
+		.main-navigation {
+			float: right;
+			font-size: 20px;
+		}
+	
+		.main-navigation a {
+			color: #fff;
+			margin-left: 30px;
+			margin-top: 10px;
+		}
+	
+		.main-navigation a.active {
+			font-weight: bold;
+			border-bottom: 2px solid #004fff;
+		}
+		a {
+			font-size: 22px;
+			text-decoration: none;
+		}
+	.contact-items{
+		width: 100%;
+		margin: auto;
+		display: flex;
+	  	flex-direction: column;
+		height: 300px;
+		position: relative;
+	}
+	.kakao-logo{
+		width: 50px;
+		height: 50px;
+		line-height: 80px;
+		position: relative;
+		top: 20%;
+	}
+	.band-logo{
+		width: 50px;
+		height: 50px;
+		line-height: 80px;
+		position: relative;
+		top: 20%;
+	}
+	.cost-contact{
+		clear: both;
+		position: relative;
+		width: 100%;
+		height: 700px;
+	}
+	.contact-box{
+		text-align: center;
+		width: 1100px;
+		height:170px;
+		float: center;
+		display: block;
+	  	margin: auto;
+	}
+	.contact-box > h2{
+		font-size: 40px;
+	}
+	.contact-box > h4{
+		font-size: 20px;
+	}
+	.represent1{
+		margin: auto;
+		text-align: center;
+		width: 600px;
+		height: 80px;
+		font-size: 22px;
+		/*inline-block으로 설정하고 margin: auto하면 가운데 정렬 안됨. width 설정해주고 margin: auto 줘야 중앙정렬됨*/
+		color: #fff;
+		font-weight: bold;
+		padding: 22px 30px;
+		border-radius: 8px;
+		background-color: #004fff;
+	}
+	.represent2{
+		margin: auto;
+		text-align: center;
+		width: 600px;
+		height: 80px;
+		font-size: 22px;
+		/*inline-block으로 설정하고 margin: auto하면 가운데 정렬 안됨. width 설정해주고 margin: auto 줘야 중앙정렬됨*/
+		color: #371C1D;
+		font-weight: bold;
+		line-height: 80px;
+		border-radius: 8px;
+		background-color: #F9E000;
+	}
+	.represent3{
+		margin: auto;
+		text-align: center;
+		width: 600px;
+		height: 80px;
+		font-size: 22px;
+		/*inline-block으로 설정하고 margin: auto하면 가운데 정렬 안됨. width 설정해주고 margin: auto 줘야 중앙정렬됨*/
+		color: #371C1D;
+		font-weight: bold;
+		line-height: 80px;
+		border-radius: 8px;
+		background-color: #1BCC21;
+		top:0;
+	}
+	.acc1{
+		color: #371C1D;
+	}
+	.acc2{
+		color: white;
+	}
+	.represent4{
+		text-align: center;
+		width: 600px;
+		height: 80px;
+		font-size: 22px;
+		/*inline-block으로 설정하고 margin: auto하면 가운데 정렬 안됨. width 설정해주고 margin: auto 줘야 중앙정렬됨*/
+		color: #371C1D;
+		font-weight: bold;
+		line-height: 80px;
+		border-radius: 8px;
+		background-color: #1BCC21;
+	}
+	.parag5{
+		top: 30%;
+		/* left: 40%; */
+		text-align: center;
+		position: relative;
+		width: 100%;
+		height: 50px;
+	}
+	.parag-icon5{
+		text-align: center;
+		width: 400px;
+		height: 30px;
+		bottom: 10%;
+	}
+	.costTable > h2{
+		font-size: 40px;
+		text-align: center;
+		top: 10%;
+	}
+	.costTable > h3{
+		font-size: 20px;
+		text-align: center;
+		top: 13%;
+	}
+	.last-text{
+		color: black;
+		text-align: center;
+		font-weight: 800;
+	}
+	.column-text{
+		color: white;
+	}
+	.text-left{
+		color: black;
+		text-align: center;
+	}
+	.costTable{
+		width: 100%;
+		clear: both;
+		height: 900px;
+		position: relative;
+	}
+	.header5{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 80px;
+		background-color: #1A1E1F;
+	}
+
+	body {
+	  font-family: "Roboto", helvetica, arial, sans-serif;
+	  font-size: 16px;
+	  font-weight: 400;
+	  text-rendering: optimizeLegibility;
+	}
+
+	div.table-title {
+	  top: 20%;
+	  display: block;
+	  margin: auto;
+	  max-width: 1100px;
+	  width: 100%;
+	  color: black;
+	  border: #2F313D solid 2.5px; 
+	}
+
+	/*** Table Styles **/
+
+	.table-fill {
+	  background: white;
+	  border-radius:3px;
+	  border-collapse: collapse;
+	  height: 320px;
+	  margin: auto;
+	  max-width: 1100px;
+	  padding:5px;
+	  width: 100%;
+	  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	  animation: float 5s infinite;
+	}
+
+	th {
+	  color:#D5DDE5;
+	  background:#1b1e24;
+	  border-bottom:4px solid #9ea7af;
+	  border-right: 1px solid #343a45;
+	  font-size:23px;
+	  font-weight: 100;
+	  padding:20px;
+	  text-align:left;
+	  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	  vertical-align:middle;
+	}
+
+	th:first-child {
+	  border-top-left-radius:3px;
+	}
+
+	th:last-child {
+	  border-top-right-radius:3px;
+	  border-right:none;
+	}
+
+	tr {
+	  border-top: 1px solid #C1C3D1;
+	  border-bottom-: 1px solid #C1C3D1;
+	  color:#666B85;
+	  font-size:16px;
+	  font-weight:normal;
+	  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+	}
+
+	tr:hover td {
+	  background:#4E5066;
+	  color:#FFFFFF;
+	  border-top: 1px solid #22262e;
+	}
+
+	tr:first-child {
+	  border-top:none;
+	}
+
+	tr:last-child {
+	  border-bottom:none;
+	}
+
+	tr:nth-child(odd) td {
+	  background:#EBEBEB;
+	}
+
+	tr:nth-child(odd):hover td {
+	  background:#4E5066;
+	}
+
+	tr:last-child td:first-child {
+	  border-bottom-left-radius:3px;
+	}
+
+	tr:last-child td:last-child {
+	  border-bottom-right-radius:3px;
+	}
+
+	td {
+	  background:#FFFFFF;
+	  padding:15px;
+	  text-align:left;
+	  vertical-align:middle;
+	  font-weight:300;
+	  font-size:18px;
+	  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+	  border-right: 1px solid #C1C3D1;
+	}
+
+	td:last-child {
+	  border-right: 0px;
+	}
+
+	th.text-left {
+	  text-align: left;
+	}
+
+	th.text-center {
+	  text-align: center;
+	}
+
+	th.text-right {
+	  text-align: right;
+	}
+
+	td.text-left {
+	  text-align: left;
+	}
+
+	td.text-center {
+	  text-align: center;
+	}
+
+	td.text-right {
+	  text-align: right;
+	}
+}

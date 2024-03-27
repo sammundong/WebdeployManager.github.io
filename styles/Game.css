@@ -1,0 +1,700 @@
+
+@font-face {
+	font-family: 'S-CoreDream-3Light';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+.cat2{
+	background-color: #1A1E1F;
+}
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-family: 'S-CoreDream-3Light';
+}
+body {
+	background-color: #1D1D1D;
+}
+
+.game-intro{
+	display: flex;
+	clear: both;
+	width: 100%;
+	height: 50%;
+	position: relative;
+	top: 10%;
+}
+.holdem-intro{
+	display: flex;
+	clear: both;
+	width: 100%;
+	height: 50%;
+	position: relative;
+}
+
+.container {
+	width: 100%;
+	max-width: 1480px;
+	padding: 0 20px;
+	margin: auto;
+	position: relative;
+	background-color: #1A1E1F;
+	z-index: 50;
+}
+a {
+	font-size: 16px;
+	text-decoration: none;
+}
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 0;
+	z-index: 20;
+	background-color: #1A1E1F;
+}
+
+header h1 {
+	position: relative;
+	height: 40px;
+	margin:0;
+	float: left;
+	z-index: 30;
+}
+header h1 img{
+	display: block;
+	position: relative;
+	top:22px;
+}
+
+
+.btn {
+	display: inline-block;
+	color: #fff;
+	font-weight: bold;
+	padding: 12px 20px;
+	border-radius: 8px;
+	background-color: #004fff;
+}
+
+.ghost-btn {
+	background-color: transparent;
+	border: 1px solid #004fff;
+}
+
+.text-wrap {
+	width: 520px;
+	height: 100vh;
+	padding: 240px 20px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+
+.text-wrap h2 {
+	color: #fff;
+	font-size: 64px;
+	line-height: 1.25;
+	font-weight: lighter;
+	margin-bottom: 40px;
+}
+
+.text-wrap h3 {
+	color: #fff;
+	font-size: 24px;
+	line-height: 1.25;
+	margin-bottom: 20px;
+}
+
+.text-wrap p {
+	color: #fff;
+	font-size: 16px;
+	line-height: 1.8;
+	margin-bottom: 20px;
+}
+
+.hero-bg {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	background-color: #0E1926;
+}
+
+.hero-bg .container {
+	height: 100%;
+}
+
+.video-wrap {
+	position: absolute;
+	left: 200px;
+	width: 1600px;
+	height: 100vh;
+	z-index: 1;
+}
+
+.video-wrap video,
+.video-wrap img {
+	position: absolute;
+	display: block;
+	width: 100%;
+}
+
+/*모바일 버전*/
+@media(max-width:767px) {
+	.txt{
+		list-style-type: none;
+		font-size: 4px;
+		color: gray;
+		position: relative;
+		left: 22%;
+	}
+
+	footer {
+		/*이 footer를 감싼 영역 자체에 margin-top을 줘버리면 빈 공간이 생김*/
+		clear: both;
+		width: 100%;
+		height: 70px;
+		color: gray;
+		list-style-type: none;
+		background-color:#292929;
+		font-size: 10px;
+	}
+	.footer_box {
+		clear: both;
+		width: 100%;
+		height: 70px;
+		margin: 0 auto;
+	}
+	.footer_logo {
+		float: left;
+		margin-top: 5px;
+		margin-left: 5px;
+		width: 40px;
+		height:40px;
+	}
+	.footer_box .address {
+		float: right;
+		margin-right:20%;
+		margin-top: 2%;
+		font-size: 3px;
+		color: gray;
+		/* margin: 45px 0 0 30px; */
+	}
+	.address{
+		color: darkgray;
+	}
+
+	.logo {
+		top: 3px;
+		left : -10px;
+		cursor:pointer;
+		float: left;
+		width: 170px;
+		height: auto;
+		
+		z-index: 20;
+	}
+	header{
+		padding: 0;
+		height: 56px;
+	}
+	header h1{
+		height: 56px;
+	}
+	header h1 img{
+		top:20px;
+		height: 16px;
+	}
+	.main-navigation{
+		position: fixed;
+		top:0;
+		right:0;
+		padding:50px 20px;
+		width: 100%;
+		height: 100vh;
+		background-color: rgba(14,25,38,0.9);
+		opacity: 0;
+		visibility: hidden;
+		transform: translateX(100%);
+		transition: 0.3s;
+	}
+	.main-navigation.active{
+		opacity: 1;
+		visibility: visible;
+		transform: translateX(0);
+		transition: 0.3s;
+	}
+	.main-navigation a{
+		display: block;
+		margin:auto;
+		margin-bottom:8px;
+		padding:12px;
+
+	}
+	.main-navigation a.btn{
+		text-align: center;
+	}
+	.video-wrap{
+		top:5vw;
+		left:-50%;
+		width:200%;
+	}
+	.text-wrap{
+		width:100%;
+		height: auto;
+		padding:20px;
+		top:auto;
+		bottom:20px;
+	}
+	.text-wrap h2{
+		font-size: 36px;
+	}
+	.text-wrap h3{
+		font-size: 20px;
+	}
+	.text-wrap p {
+		font-size: 14;
+	}
+
+	.more-btn{
+		display: block;
+		position: absolute;
+		right:12px;
+		top:8px;
+		width:40px;
+		height: 40px;
+		border-radius: 8px;
+		border:none;
+		background-color: transparent;
+	}
+	.more-btn .icon{
+		display: block;
+		width:24px;
+		height: 24px;
+		margin: 0 auto;
+		background: url(../images/menu-icon.svg) no-repeat center;
+		background-size: contain;
+	}
+	.more-btn.active .icon{
+		background: url(../images/menu-close-icon.svg) no-repeat center;
+		background-size: contain;
+	}
+
+	.lineh{
+		top: 8%;
+		left: 3.5%;
+		background-color :white;
+		width: 75%;
+		height: 0.3vh;
+		margin: left;
+	}
+	.parag2{
+		top: 30%;
+		/* left: 40%; */
+		text-align: center;
+		position: relative;
+		width: 100%;
+		height: 20px;
+	}
+	.parag-icon2{
+		text-align: center;
+		width: 150px;
+		height: 10px;
+	}
+	.game-img{
+	width: 50%;
+	height: 100%;
+	position: relative;
+}
+.game-descrip{
+	width: 50%;
+	height: 100%;
+	position: relative;	
+}
+	.line2 {
+		background-color :white;
+		width: 92%;
+		height: 0.3vh;
+		margin: auto;
+	}
+	.game-info{
+		clear: both;
+		width: 100%;
+		height: 300px; 
+	}
+
+	.game-infog{
+		top: 12%;
+		display: block;
+		margin: auto;
+		width: 80%;
+		height: 200px;
+	}
+
+	hr{
+		top: 5px;
+	}
+	hr{
+		top: 10px;
+	}
+	.contents{
+		width: 100%;
+		height: 300px;
+		bottom: 0;
+		position: relative;
+	}
+	.card-icon{
+		left: 5%;
+		width: 30%;
+		height: 100%;
+	}
+	.card-info{
+		left: 5%;
+		width: 70%;
+		height: 100%;
+	}
+	.holdem-info{
+		top: 10%;
+		left: 10%;
+		width: 70%;
+		height: 100%;
+	}
+	.holdem-icon{
+		width: 30%;
+		height: 100%;
+	}
+	.card{
+		width: 107px;
+		height: 89px;
+		margin: auto;
+		display: block;
+		top: 20%;
+	}
+	.holdem{
+		width: 250px;
+		height: 123px;
+		right: 30%;
+		bottom: -30%;
+		position: relative;
+	}
+	.line {
+		background-color :white;
+		width: 78vw;
+		height: 0.3vh;
+		margin: auto;
+		margin-top: 10%;
+		margin-bottom: 10%;
+	}
+	.card-info > h1{
+		font-size: 20px;
+	}
+	.card-info > ul{
+		left: 10%;
+		font-size: 13px;
+		line-height: 1.5em;
+	}
+	.holdem-info > h1{
+		top: 5%;
+		left: 5%;
+		font-size: 20px;
+	}
+	.holdem-info > ul{
+		top: 15%;
+		left: 5%;
+		font-size: 15px;
+		line-height: 1.5em;
+	}
+	.pannel-info{
+		width: 153px;
+		height: 237px;
+		position: relative;
+		left: 5%;
+		top: 3%;
+	}
+	.game-descrip > h2{
+		top: 5%;
+		left: 5%;
+		font-size: 15px;
+	}
+	.game-descrip > ul{
+		top: 15%;
+		left: 5%;
+		font-size: 10px;
+		line-height: 1.7em;
+	}
+	.game-descrip > li{
+		margin-left: 10%;
+		top: 5%;
+		position: relative;
+	}
+	.gameDescription2{
+		display: flex;
+		clear: both;
+		left: 3%;
+		width: 100%;
+		height: 300px; 
+		position: relative;
+	}
+	.header2{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #1A1E1F;
+}
+}
+
+/*데스크탑 버전*/
+/*동일한 css classname을 여러 클래스에서 사용할 경우 마지막 것만 적용됨*/
+@media(min-width:768px) {
+	.more-btn {
+
+		display: none;
+	
+	}
+	.txt{
+		list-style-type: none;
+		font-size: 17px;
+		color: gray;
+		position: relative;
+		left: 70%;
+		line-height: 1.5rem;
+	}
+
+	footer {
+		clear: both;
+		position: relative;
+		width: 100%;
+		height: 150px;
+		color: darkgray;
+		list-style-type: none;
+		background-color:#292929;
+	}
+	.footer_box {
+		position: relative;
+		width: 100%;
+		height: 150px;
+	}
+	.footer_logo {
+		clear: both;
+		float: left;
+		margin-top: 12.5px;
+		width: 100px;
+		left: 3%;
+		height:100px;
+	}
+	.footer_box .address {
+		float: right;
+		margin-right: 20%;
+		font-size: 20px;
+		color: darkgray;
+	}
+	.address{
+		margin-top: 2%;
+		color: #404040;
+		
+	}
+	.logo {
+		top: 8px;
+		cursor:pointer;
+		float: left;
+		width: 270px;
+		height: auto;
+		margin: 0;
+		padding: 0;
+		z-index: 50;
+		}
+		
+	
+		.main-navigation {
+			float: right;
+			font-size: 20px;
+		}
+	
+		.main-navigation a {
+			color: #fff;
+			margin-left: 30px;
+			margin-top: 10px;
+		}
+	
+		.main-navigation a.active {
+			font-weight: bold;
+			border-bottom: 2px solid #004fff;
+		}
+		a {
+			font-size: 22px;
+			text-decoration: none;
+		}
+		.parag2{
+		top: 30%;
+		/* left: 40%; */
+		text-align: center;
+		position: relative;
+		width: 100%;
+		height: 50px;
+	}
+	.parag-icon2{
+		text-align: center;
+		width: 500px;
+		height: 30px;
+		bottom: 10%;
+	}
+	.game-img{
+	width: 35%;
+	height: 100%;
+	left: 7%;
+	position: relative;
+}
+.game-descrip{
+	width: 80%;
+	height: 100%;
+	left: 13%;
+	position: relative;	
+}
+	.header2{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 80px;
+		background-color: #1A1E1F;
+	}
+	.game-info{
+		clear: both;
+		width: 100%;
+		height: 800px; 
+	}
+
+	.game-infog{
+		top: 10%;
+		display: block;
+		margin: auto;
+		width: 85%;
+		height: 620px;
+	}
+
+	.line2 {
+		background-color :white;
+		width: 92%;
+		height: 0.3vh;
+		margin: auto;
+
+	}
+	hr{
+		top: 10px;
+	}
+	.contents{
+		width: 100%;
+		height: 900px;
+		bottom: 0;
+		position: relative;
+	}
+	.card-icon{
+		left: 10%;
+		width: 30%;
+		height: 100%;
+	}
+	.card-info{
+		left: 10%;
+		width: 70%;
+		height: 100%;
+	}
+	.holdem-info{
+		top: 10%;
+		left: 10%;
+		width: 70%;
+		height: 100%;
+	}
+	.holdem-icon{
+		width: 30%;
+		height: 100%;
+	}
+	.card{
+		width: 237px;
+		height: 219px;
+		margin: auto;
+		display: block;
+		top: 13%;
+	}
+	.holdem{
+		width: 450px;
+		height: 323px;
+		right: 25%;
+		
+		position: relative;
+	}
+	
+	.line {
+		background-color :white;
+		width: 78vw;
+		height: 0.3vh;
+		margin: auto;
+		margin-top: 10%;
+		margin-bottom: 10%;
+	}
+	.card-info > h1{
+		font-size: 40px;
+	}
+	.card-info > ul{
+		top: 10%;
+		font-size: 25px;
+		line-height: 1.5em;
+	}
+	.holdem-info > h1{
+		top: 5%;
+		left: 5%;
+		font-size: 40px;
+	}
+	.holdem-info > ul{
+		top: 15%;
+		left: 5%;
+		font-size: 25px;
+		line-height: 1.5em;
+	}
+	.pannel-info{
+		width: 500px;
+		height: 607px;
+		position: relative;
+		left: 22%;
+		top: 3%;
+	}
+	.lineh{
+		top: 10%;
+		left: 23%;
+		background-color :white;
+		width: 67%;
+		height: 0.5vh;
+		margin: left;
+	}
+	.game-descrip > h2{
+		top:7%;
+		left: 5%;
+		font-size: 40px;
+	}
+	.game-descrip > ul{
+		top: 15%;
+		left: 5%;
+		font-size: 25px;
+		line-height: 1.5em;
+	}
+	.game-descrip > li{
+		position: relative;
+		list-style-position : inside;
+		text-indent: -20px;
+
+	}
+	.gameDescription2{
+		display: flex;
+		clear: both;
+		width: 100%;
+		height: 800px; 
+		position: relative;
+	}
+}

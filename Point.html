@@ -1,0 +1,480 @@
+<!-- 
+import DPicture from './Modal/DModal';
+import DRicture from './Modal/DRodal';
+import GWicture from './Modal/GWodal';
+import HDicture from './Modal/HDodal';
+import HPicture from './Modal/HModal';
+import JPicture from './Modal/JModal';
+import KPicture from './Modal/KModal';
+import NPicture from './Modal/NModal';
+import SPicture from './Modal/SModal'; -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ba8d26fecdba2d57d7fff2ab09698acd" type="text/javascript"></script>
+    <meta name="google-site-verification" content="r_RNW7sKTwMEXgAKlheolvzf0rVJ-uHvCCkw-gXBrFw" />
+    <meta name="naver-site-verification" content="c074e924d5c4438192e41bf3392c33018d5e97b7" />
+    <link rel="stylesheet" href="./styles/Point.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- <script src="./Map/DeogcheonMap.js"></script>
+    <script src="./Map/DongraeMap.js"></script>
+    <script src="./Map/gwangalliMap.js"></script>
+    <script src="./Map/HaeundaeMap.js"></script>
+    <script src="./Map/JangyuMap.js"></script>
+    <script src="./Map/KyungsungMap.js"></script>
+    <script src="./Map/NampoMap.js"></script>
+    <script src="./Map/SeomyeonMap.js"></script> -->
+</head>
+
+<body>
+      <div class="header4">
+        <div class="container">
+            <h1><a href="./index.html"><img src="./images/new_logo.png" class="logo" alt=""></img></a></h1>
+            <nav class="main-navigation">
+                <a href="./index.html" style="color: white">홀덤포커스</a>
+                <a href='./Game.html' style="color: white">게임소개</a>
+                <a href='./Event.html' style="color: white">이벤트 소개</a>
+                <a href='./Point.html' style="color: white">지점 안내</a>
+                <a href='./Affiliate.html' class="btn" style="color: white">가맹 문의</a>
+            </nav>
+            <button class="more-btn">
+                <i class="icon"></i>
+            </button>
+        </div>
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+              const moreBtn = document.querySelector('.more-btn');
+              const navigation = document.querySelector('.main-navigation');
+  
+              moreBtn.addEventListener('click', function () {
+                  this.classList.toggle('active');
+                  navigation.classList.toggle('active');
+              });
+          });
+      </script>
+    </div>
+    <hr style="top: 5px"></hr>
+				
+    <div class="title">
+      <div class="category mb-5 mt-9">지점 안내</div>
+      <div class="line"></div>
+      <div class="explain mt-7">저희 홀덤포커스는 해운대, 광안리, 동래, 서면, 남포동, 덕천 경성대, 하단 총 9개 지점을 운영 중에 있으며 궁금하신 사항은 아래의 오픈 카톡으로 문의 주시길 바랍니다.</div>
+    </div>
+      <br></br>		
+      <div class="places mt-9">
+        <div class="place mb-5 mt-7">하단점</div>
+        <div class="line"></div>
+        <div class="address mt-7">주소 : 부산시 낙동대로 535번길 9, 2층</div>
+          <div id="hadan"></div>
+          <script src="./Map/HadanMap.js"></script>
+          <div class="btns">
+        <a href="https://open.kakao.com/o/gCk9K8Hc">
+        <button type="button" class="kakao">
+          <img src="./images/kakao.png" class="icon"></img>
+          &nbsp;Kakao Talk
+        </button>
+        </a>
+          <button class="modal-btn" data-modal-target="#modal1">매장 사진 보기</button>
+
+          <!-- The Modal -->
+          <div id="modal1" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 style="text-align: center;">하단점</h1>
+                <span class="close">&times;</span>
+              </div>
+              <div class="slider">
+                <a class="prev">&#10094;</a>
+                <a class="next">&#10095;</a>
+                <div class="slides">
+                  <img src="./images/hadan_in1.jpg">
+                  <img src="./images/hadan_in2.jpg">
+                  <img src="./images/hadan_out1.jpg">
+                  <img src="./images/hadan_play1.jpg">
+                  <img src="./images/hadan_play2.jpg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br></br>		
+      <br></br>	
+      <br></br>	
+      <div class="places mt-9">
+        <div class="place mb-5 mt-7">남포점</div>
+        <div class="line"></div>
+        <div class="address mt-7">주소 : 부산시 중구 광복로 20, 2층</div>
+          <div id="nampo"></div>
+          <script src="./Map/NampoMap.js"></script>
+        <div class="btns">
+        <a href="https://open.kakao.com/o/gaP0OjIe">
+        <button type="button" class="kakao">
+          <img src="./images/kakao.png" class="icon"></img>
+          &nbsp;Kakao Talk
+        </button>
+        </a>
+        <button class="modal-btn" data-modal-target="#modal2">매장 사진 보기</button>
+      </div>
+        <!-- The Modal -->
+        <div id="modal2" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 style="text-align: center;">남포점</h1>
+              <span class="close">&times;</span>
+            </div>
+            <div class="slider">
+              <a class="prev">&#10094;</a>
+              <a class="next">&#10095;</a>
+              <div class="slides">
+                <img src="./images/nampo1.jpg">
+                <img src="./images/nampo2.jpg">
+                <img src="./images/nampo3.jpg">
+                <img src="./images/nampo4.jpg">
+                <img src="./images/nampo5.jpg">
+              </div>
+            </div>
+          
+        </div>
+        </div>
+      </div>
+      <br></br>
+      <br></br>	
+      <br></br>	
+      <div class="places mt-9">
+        <div class="place mb-5 mt-7">서면점</div>
+        <div class="line"></div>
+        <div class="address mt-7">주소 : 부산시 진구 중앙대로 680번가길 74, 5층</div>
+          <div id="seomyeon"></div>
+          <script src="./Map/SeomyeonMap.js"></script>
+        <div class="btns">
+        <a href="https://open.kakao.com/o/gZyCzgNd">
+        <button type="button" class="kakao">
+          <img src='./images/kakao.png' class="icon"></img>
+          &nbsp;Kakao Talk
+        </button>
+        </a>
+        <button class="modal-btn" data-modal-target="#modal3">매장 사진 보기</button>
+
+        <!-- The Modal -->
+        <div id="modal3" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 style="text-align: center;">서면점</h1>
+              <span class="close">&times;</span>
+            </div>
+            <div class="slider">
+              <a class="prev">&#10094;</a>
+              <a class="next">&#10095;</a>
+              <div class="slides">
+                <img src="./images/seomyeon1.jpg">
+                <img src="./images/seomyeon2.jpg">
+                <img src="./images/seomyeon3.jpg">
+                <img src="./images/seomyeon4.jpg">
+                <img src="./images/seomyeon5.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <br></br>
+      <br></br>	
+      <br></br>	
+      <div class="places mt-9">
+        <div class="place mb-5 mt-7">덕천점</div>
+        <div class="line"></div>
+        <div class="address mt-7">주소 : 부산시 북구 덕천1길 47,4층</div>
+          <div id="deogcheon"></div>
+          <script src="./Map/DeogcheonMap.js"></script>
+        <div class="btns"> 
+        <a href="https://open.kakao.com/o/gzuazYZd">
+        <button type="button" class="kakao">
+          <img src='./images/kakao.png' class="icon"></img>
+          &nbsp;Kakao Talk
+        </button>
+        </a>
+        <button class="modal-btn" data-modal-target="#modal4">매장 사진 보기</button>
+
+        <!-- The Modal -->
+        <div id="modal4" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 style="text-align: center;">덕천점</h1>
+              <span class="close">&times;</span>
+            </div>
+            <div class="slider">
+              <a class="prev">&#10094;</a>
+              <a class="next">&#10095;</a>
+              <div class="slides">
+                <img src="./images/deogcheon1.jpg">
+                <img src="./images/deogcheon2.jpg">
+                <img src="./images/deogcheon3.jpg">
+                <img src="./images/deogcheon4.jpg">
+                <img src="./images/deogcheon5.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <br></br>
+      <br></br>	
+      <br></br>	
+      <div class="places mt-9">
+        <div class="place mb-5 mt-7">경성대점</div>
+        <div class="line"></div>
+        <div class="address mt-7">주소 : 부산시 남구 용소로 7번길 24, 2층</div>
+          <div id="kyungsung"> </div>
+          <script src="./Map/KyungsungMap.js"></script>
+        <div class="btns">
+        <a href="https://open.kakao.com/o/g3PRbEoe">
+        <button type="button" class="kakao">
+          <img src='./images/kakao.png' class="icon"></img>
+          &nbsp;Kakao Talk
+        </button>
+        </a>
+        <button class="modal-btn" data-modal-target="#modal5">매장 사진 보기</button>
+
+        <!-- The Modal -->
+        <div id="modal5" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 style="text-align: center;">경성대점</h1>
+              <span class="close">&times;</span>
+            </div>
+            <div class="slider">
+              <a class="prev">&#10094;</a>
+              <a class="next">&#10095;</a>
+              <div class="slides">
+                <img src="./images/kyungsung1.jpg">
+                <img src="./images/kyungsung2.jpg">
+                <img src="./images/kyungsung3.jpg">
+                <img src="./images/kyungsung4.jpg">
+                <img src="./images/kyungsung5.jpg">
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+      </div>
+      <br></br>	
+      <br></br>	
+      <br></br>	
+      <div class="places mt-9">
+        <div class="place mb-5 mt-7">장유점</div>
+        <div class="line"></div>
+        <div class="address mt-7">주소 : 김해시 번화 1로 76번길 20, 2층</div>
+          <div id="jangyu"></div>
+          <script src="./Map/JangyuMap.js"></script>
+        <div class="btns">
+        <a href="https://open.kakao.com/o/gAXgabFd">
+        <button type="button" class="kakao">
+          <img src='./images/kakao.png' class="icon"></img>
+          &nbsp;Kakao Talk
+        </button>
+        </a>
+        <button class="modal-btn" data-modal-target="#modal6">매장 사진 보기</button>
+
+        <!-- The Modal -->
+        <div id="modal6" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 style="text-align: center;">장유점</h1>
+              <span class="close">&times;</span>
+            </div>
+            <div class="slider">
+              <a class="prev">&#10094;</a>
+              <a class="next">&#10095;</a>
+              <div class="slides">
+                <img src="./images/jangyu1.jpg">
+                <img src="./images/jangyu2.jpg">
+                <img src="./images/jangyu3.jpg">
+                <img src="./images/jangyu4.jpg">
+                <img src="./images/jangyu5.jpg">
+              </div>
+            </div>
+          </div>
+        </div>        
+        </div>
+      </div>
+  
+      <br></br>	
+      <br></br>	
+      <br></br>	
+   
+  <br></br>	
+      <br></br>	
+      <br></br>	
+      <div class="places mt-9">
+        <div class="place mb-5 mt-7">해운대</div>
+        <div class="line"></div>
+        <div class="address mt-7">주소 : 부산시 해운대구 구남로 25, 3층</div><br/>
+          <div id="Haeundae"></div>
+          <script src="./Map/HaeundaeMap.js"></script>
+        <div class="btns">
+        <a href="https://open.kakao.com/o/g0IhHUff">
+        <button type="button" class="kakao">
+          <img src='./images/kakao.png' class="icon"></img>
+          &nbsp;Kakao Talk
+        </button>
+      </a>
+        <button class="modal-btn" data-modal-target="#modal7">매장 사진 보기</button>
+
+        <!-- The Modal -->
+        <div id="modal7" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 style="text-align: center;">해운대점</h1>
+              <span class="close">&times;</span>
+            </div>
+            <div class="slider">
+              <a class="prev">&#10094;</a>
+              <a class="next">&#10095;</a>
+              <div class="slides">
+                <img src="./images/hadan_in1.jpg">
+                <img src="./images/hadan_in2.jpg">
+                <img src="./images/hadan_out1.jpg">
+                <img src="./images/hadan_play1.jpg">
+                <img src="./images/hadan_play2.jpg">
+              </div>
+            </div>
+          </div>
+        </div>        </div>
+      </div>
+  
+      <br></br>	
+      <br></br>	
+      <br></br>
+  
+    <br></br>	
+      <br></br>	
+      <br></br>	
+      <div class="places mt-9">
+        <div class="place mb-5 mt-7">광안리</div>
+        <div class="line"></div>
+        <div class="address mt-7">주소 : 부산시 수영구 광남로 151 3층</div><br/>
+          <div id="Gwangalli"></div>
+          <script src="./Map/gwangalliMap.js"></script>
+        <div class="btns">
+        <a href="https://open.kakao.com/o/g0MXriif">
+        <button type="button" class="kakao">
+          <img src='./images/kakao.png' class="icon"></img>
+          &nbsp;Kakao Talk
+        </button>
+      </a>
+        <button class="modal-btn" data-modal-target="#modal8">매장 사진 보기</button>
+
+        <!-- The Modal -->
+        <div id="modal8" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 style="text-align: center;">광안리점</h1>
+              <span class="close">&times;</span>
+            </div>
+            <div class="slider">
+              <a class="prev">&#10094;</a>
+              <a class="next">&#10095;</a>
+              <div class="slides">
+                <img src="./images/gwangalli1.jpg">
+                <img src="./images/gwangalli2.jpg">
+                <img src="./images/gwangalli3.jpg">
+                <img src="./images/gwangalli4.jpg">
+                <img src="./images/gwangalli5.jpg">
+              </div>
+            </div>
+          </div>
+        </div>       </div>
+      </div>
+  
+      <br></br>	
+      <br></br>	
+      <br></br>
+  
+  <br></br>	
+      <br></br>	
+      <br></br>	
+      <div class="places mt-9">
+        <div class="place mb-5 mt-7">동래</div>
+        <div class="line"></div>
+        <div class="address mt-7">주소 :부산시 동래구 명륜로 139번길 27, 4층</div><br/>
+          <div id="Dongrae"></div>
+          <script src="./Map/DongraeMap.js"></script>
+        <div class="btns">
+        <a href="https://open.kakao.com/o/gFaLCzbf">
+        <button type="button" class="kakao">
+          <img src='./images/kakao.png' class="icon"></img>
+          &nbsp;Kakao Talk
+        </button>
+      </a>
+        <button class="modal-btn" data-modal-target="#modal9">매장 사진 보기</button>
+
+        <!-- The Modal -->
+        <div id="modal9" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 style="text-align: center;">동래점</h1>
+              <span class="close">&times;</span>
+            </div>
+            <div class="slider">
+              <a class="prev">&#10094;</a>
+              <a class="next">&#10095;</a>
+              <div class="slides">
+                <img src="./images/Dongrae1.jpg">
+                <img src="./images/Dongrae2.jpg">
+                <img src="./images/Dongrae3.jpg">
+                <img src="./images/Dongrae4.jpg">
+                <img src="./images/Dongrae5.jpg">
+              </div>
+            </div>
+          </div>
+        </div>       </div>
+      </div>
+  
+      <br></br>	
+      <br></br>	
+      <br></br>
+  
+
+    <script src="./js/shop1.js"></script>
+    <div>
+        <footer>
+          <div class="footer_box">
+            <div class="footer_logo">
+              <img src="./images/logo.svg" class="footer_logo" alt=""></img>
+            </div>
+            <div class="address">
+              <ul>
+                <li class="txt">본사 : 부산광역시 진구 중앙대로 680번가길 74, 5층</li>
+                <li class="txt">TEL : 010-8700-2129</li>
+                <li class="txt">COPYRIGHT (C) Hold'em Focus</li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+</body>
+</html>
